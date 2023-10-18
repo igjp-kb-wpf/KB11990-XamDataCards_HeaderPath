@@ -1,0 +1,28 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XamDataCards_HeaderPath"
+        xmlns:igWPF="http://schemas.infragistics.com/xaml/wpf" x:Class="XamDataCards_HeaderPath.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <igWPF:XamDataCards  x:Name="xamDataGrid1" DataSource="{Binding}" >
+            <igWPF:XamDataCards.ViewSettings>
+                <igWPF:CardViewSettings HeaderPath="Test1" />
+            </igWPF:XamDataCards.ViewSettings>
+            <igWPF:XamDataCards.FieldLayouts>
+                <igWPF:FieldLayout>
+                    <igWPF:FieldLayout.Fields>
+                        <igWPF:Field Name="Id" />
+                        <igWPF:Field Name="Test1" />
+                        <igWPF:Field Name="Test2" />
+                    </igWPF:FieldLayout.Fields>
+                </igWPF:FieldLayout>
+            </igWPF:XamDataCards.FieldLayouts>
+        </igWPF:XamDataCards>
+
+    </Grid>
+</Window>
